@@ -17,10 +17,10 @@
 all: seq 
 
 
-CC             = gcc
+CC             = icc
 
 INCFLAGS    = -I.
-OPTFLAGS    = -O4 -DNDEBUG -fopenmp
+OPTFLAGS    = -fast -DNDEBUG -qopenmp
 LDFLAGS     = $(OPTFLAGS)
 
 
